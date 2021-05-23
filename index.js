@@ -17,42 +17,42 @@ app.get('/', (req, res) => {
             img: 'http://localhost:5000/images/image1.jpg',
             title: 'Image',
             author: 'author',
-            featured: true
+            favorite: true
         },
         {
             id: 2,
             img: 'http://localhost:5000/images/image2.jpg',
             title: 'Image',
             author: 'author',
-            featured: false
+            favorite: false
         },
         {
             id: 3,
             img: 'http://localhost:5000/images/image5.jpg',
             title: 'Image',
             author: 'author',
-            featured: true
+            favorite: false
         },
         {
             id: 4,
             img: 'http://localhost:5000/images/image6.jpg',
             title: 'Image',
             author: 'author',
-            featured: true
+            favorite: true
         },
         {
             id: 5,
             img: 'http://localhost:5000/images/image7.jpg',
             title: 'Image',
             author: 'author',
-            featured: true
+            favorite: true
         },
         {
             id: 6,
             img: 'http://localhost:5000/images/image3.jpg',
             title: 'Image',
             author: 'author',
-            featured: true
+            favorite: false
         }
     ]);
 });
