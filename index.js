@@ -1,5 +1,6 @@
 const express = require('express');
 const path = require('path');
+const food_items = require('./routes/foods/food-items')
 const app = express();
 app.use((req, res, next) => {
     res.header("Access-Control-Allow-Origin", "*");
@@ -10,52 +11,7 @@ app.use((req, res, next) => {
 });
 
 app.use(express.static(path.join(__dirname, 'public')))
-app.get('/', (req, res) => {
-    res.status(200).json([
-        {
-            id: 1,
-            img: 'http://localhost:5000/images/image1.jpg',
-            title: 'Image',
-            author: 'author',
-            favorite: true
-        },
-        {
-            id: 2,
-            img: 'http://localhost:5000/images/image2.jpg',
-            title: 'Image',
-            author: 'author',
-            favorite: false
-        },
-        {
-            id: 3,
-            img: 'http://localhost:5000/images/image5.jpg',
-            title: 'Image',
-            author: 'author',
-            favorite: false
-        },
-        {
-            id: 4,
-            img: 'http://localhost:5000/images/image6.jpg',
-            title: 'Image',
-            author: 'author',
-            favorite: true
-        },
-        {
-            id: 5,
-            img: 'http://localhost:5000/images/image7.jpg',
-            title: 'Image',
-            author: 'author',
-            favorite: true
-        },
-        {
-            id: 6,
-            img: 'http://localhost:5000/images/image3.jpg',
-            title: 'Image',
-            author: 'author',
-            favorite: false
-        }
-    ]);
-});
+app.use('/food', food_items);
 
 app.listen(5000, () => {
     console.log('started');
