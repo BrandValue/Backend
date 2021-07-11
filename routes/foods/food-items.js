@@ -112,4 +112,27 @@ router.get('/food-item', (req, res, next) => {
     }]);
 });
 
+router.get('food/filterCriteria', (req, res, next) => {
+    return res.status(200).json([
+        'Vegetarian',
+        'Non-Vegetarian',
+        'Muglai',
+        'Tandoor',
+        'Exotic',
+        'Continental',
+        'Indian',
+        'Italian',
+        'Chinese',
+        'Sea foods',
+        'Diet foods',
+        'Snacks',
+        'Main Course',
+        'Sweets',
+        'Dinner',
+        'Dessert',
+        'Soft Drinks',
+        'Drinks'
+    ])
+})
+
 module.exports = router;
