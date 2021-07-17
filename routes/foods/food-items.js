@@ -58,7 +58,7 @@ router.get('/food-item', (req, res, next) => {
         rating: 4,
         category: 'non-veg',
         isFavorite: true,
-        price: '₹10 for 1',
+        price: {price: 10, qty: 2},
     }, {
         id: 2,
         title: 'ABC',
@@ -68,7 +68,7 @@ router.get('/food-item', (req, res, next) => {
         rating: 3,
         category: 'veg',
         isFavorite: true,
-        price: '₹10 for 4',
+        price: {price: 10, qty: 2},
     }, {
         id: 3,
         title: 'ABC',
@@ -78,7 +78,7 @@ router.get('/food-item', (req, res, next) => {
         rating: 2,
         category: 'veg',
         isFavorite: true,
-        price: '₹10 for 4',
+        price: {price: 10, qty: 2},
     }, {
         id: 4,
         title: 'ABC',
@@ -88,7 +88,7 @@ router.get('/food-item', (req, res, next) => {
         rating: 1,
         category: 'veg',
         isFavorite: true,
-        price: '₹10 for 1',
+        price: {price: 10, qty: 2},
     }, {
         id: 5,
         title: 'ABC',
@@ -98,7 +98,7 @@ router.get('/food-item', (req, res, next) => {
         rating: 4,
         category: 'non-veg',
         isFavorite: true,
-        price: '₹10 for 2',
+        price: {price: 10, qty: 2},
     }, {
         id: 6,
         title: 'ABC',
@@ -108,7 +108,7 @@ router.get('/food-item', (req, res, next) => {
         rating: 4,
         category: 'veg',
         isFavorite: true,
-        price: '₹10 for 2',
+        price: {price: 10, qty: 2},
     }]);
 });
 
