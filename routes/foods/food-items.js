@@ -112,7 +112,7 @@ router.get('/food-item', (req, res, next) => {
     }]);
 });
 
-router.get('food/filterCriteria', (req, res, next) => {
+router.get('/food/filterCriteria', (req, res, next) => {
     return res.status(200).json([
         'Vegetarian',
         'Non-Vegetarian',
